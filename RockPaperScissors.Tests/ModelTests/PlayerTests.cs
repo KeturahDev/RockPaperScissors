@@ -15,5 +15,15 @@ namespace RockerPaperScissors.TestTools
 
       Assert.AreEqual(typeof(Player), result.GetType());
     }
+    [TestMethod]
+    public void GivePlayerName_AssaignNamePropsToPlayer_String()
+    {
+      string name = "Benji";
+      Player player1 = new Player(name);
+
+      string result = player1.Name;
+
+      Assert.AreEqual(name, result);
+    }
   }
 }
