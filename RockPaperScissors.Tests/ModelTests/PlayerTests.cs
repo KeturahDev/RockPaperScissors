@@ -42,14 +42,13 @@ namespace RockerPaperScissors.Tests
       //player is prompted to give name
       string name = "Benji";
       Player player1 = new Player(name);
-      Weapon player1Weapon = new Weapon();
       //player is prompted to choose a weapon [rock(r), paper(p), or scissors(s)]
       string chooseAWeaponResonse = "paper";
 
-      player1Weapon.AssaignType(chooseAWeaponResonse);
-      player1.Weapon = player1Weapon.Type;
+      player1.AssaignWeapon(chooseAWeaponResonse);
+      string response = player1.Weapon;
 
-      Assert.AreEqual("Paper", player1.Weapon);
+      Assert.AreEqual("Paper", response);
     }
   }
 }
