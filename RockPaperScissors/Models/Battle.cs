@@ -12,9 +12,8 @@ namespace RockPaperScissors.Models
 
     public string Versus()
     {
-      // string comparison = Player1.Weapon + " vs " + Player2.Weapon;
-      // return comparison;
-      return "fail test";
+      string comparison = Player1.Weapon + " vs " + Player2.Weapon;
+      return comparison;
     }
   }
 }
