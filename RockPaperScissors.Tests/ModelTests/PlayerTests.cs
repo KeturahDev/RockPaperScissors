@@ -9,7 +9,7 @@ namespace RockerPaperScissors.TestTools
     [TestMethod]
     public void ConstructPlayer_CreatesPlayer_Player()
     {
-      Player player1 = new Player();
+      Player player1 = new Player("Mimi");
 
       Player result = player1;
 
