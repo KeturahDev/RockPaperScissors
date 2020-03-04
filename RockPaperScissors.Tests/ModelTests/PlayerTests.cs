@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using RockPaperScissors.Models;
 
-namespace RockerPaperScissors.TestTools
+namespace RockerPaperScissors.Tests
 {
   [TestClass]
   public class PlayerTests 
@@ -35,7 +35,6 @@ namespace RockerPaperScissors.TestTools
       player1.Weapon = weaponOfChoice;
 
       Assert.AreEqual(weaponOfChoice, player1.Weapon);
-      
     }
   }
 }

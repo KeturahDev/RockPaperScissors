@@ -22,7 +22,8 @@ Paper beats Rock
 | Create **players** | create player 1 and player 2 | *2 seperate players exist* |
 | Create players with names | create player 1(john) and player 2(jeff) | *john and jeff exist* |
 | Players write in weapons | john.getWeapon("paper") | *johns weapon from weapon propert:* "paper" |
-| **Weapon objects** exist | createPaper, createRock, createScissors | *rock, paper, scissors exist* |
+| **Weapon objects** exist | create | *rock, paper, scissors exist* |
+| Assaign weapon with type after having it created | Weapon.ChooseType("rock") | *weapon, type: Rock exist* |
 | Players choose **weapon** out of available weapons | *rock paper or scissors* jeff.getWeapon(scissors) | *jeff has scissors as weapon  property* |
 | Victory/Draw/Lose **statuses** are created | createVictory, createDraw, createLose | *victory, draw, lose exist* |
 | **Battle** is created with weapon props | create battle(paper, scissors) | *battle of paper and scissors exists* |
