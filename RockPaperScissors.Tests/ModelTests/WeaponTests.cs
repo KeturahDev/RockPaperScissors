@@ -15,5 +15,16 @@ namespace RockPaperScissors.Tests
 
       Assert.AreEqual(typeof(Weapon), result.GetType());
     }
+    [TestMethod]
+    public void AssaignWeaponType_GiveWeaponsAnOptionTypeProperty_OptionPropType()
+    {
+      Weapon newWeapon = new Weapon();
+      string weaponOfChoice = "rock";
+
+      newWeapon.AssaignType(weaponOfChoice);
+
+      Assert.AreEqual("Rock", newWeapon.Type);
+
+    }
   }
 }
