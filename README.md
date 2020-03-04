@@ -22,12 +22,10 @@ Paper beats Rock
 | Create **players** | create player 1 and player 2 | *2 seperate players exist* |
 | Create players with names | create player 1(john) and player 2(jeff) | *john and jeff exist* |
 | Players write in weapons | john.getWeapon("paper") | *johns weapon from weapon propert:* "paper" |
-| **Weapon objects** exist | create | *rock, paper, scissors exist* |
-| Assaign weapon with type after having it created | Weapon.ChooseType("rock") | *weapon, type: Rock exist* |
-| Players choose **weapon** out of available weapons | *rock paper or scissors* jeff.getWeapon(scissors) | *jeff has scissors as weapon  property* |
+| Players choose **weapon** out of available weapons | *rock paper or scissors* jeff.AssaignWeapon("scissors") | *jeff has Scissors as weapon property* |
+| **Battle** is created with player props | create battle(player1, player2) | *battle of player1 and player2 exists* |
+| Battle compares weapon props of players | create battle(player1, player2 | *battle output:* paper vs scissors |
 | Victory/Draw/Lose **statuses** are created | createVictory, createDraw, createLose | *victory, draw, lose exist* |
-| **Battle** is created with weapon props | create battle(paper, scissors) | *battle of paper and scissors exists* |
-| Battle compares weapon props | create battle(paper, scissors) | *battle output:* paper and scissors |
 | Battle returns Victory/Loose/Draw statuses based on weapon combinations | create battle(paper, scissors) | *paper **Lose**, scissors **Victory*** |
 | Battle holds two players | create battle(jeff, john) | *battle of jeff and john exists* |
 | Battle results in two seperate statuses depending on assaigned weapons | battle holds: john-paper and jeff-scrissors | *john **Lose**, jeff **Victory*** |
