@@ -1,5 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using RockPaperScissors.Models;
+using System;
+
 
 namespace RockPaperScissors.Tests 
 {
@@ -15,7 +17,7 @@ namespace RockPaperScissors.Tests
 
       Battle result = newBattle;
 
-      Assert.AreEqual(typeof(Battle), result);
+      Assert.AreEqual(typeof(Battle), result.GetType());
     }
   }
 }
