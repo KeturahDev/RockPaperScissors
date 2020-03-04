@@ -25,5 +25,17 @@ namespace RockerPaperScissors.TestTools
 
       Assert.AreEqual(name, result);
     }
+    [TestMethod]
+    public void PlayersWeapon_GivePlayersAWeapon_String()
+    {
+      string name = "Benji";
+      Player player1 = new Player(name);
+      string weaponOfChoice = "rock";
+
+      player1.Weapon = weaponOfChoice;
+
+      Assert.AreEqual(weaponOfChoice, player1.Weapon);
+      
+    }
   }
 }
