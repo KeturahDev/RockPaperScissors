@@ -43,5 +43,18 @@ namespace RockPaperScissors.Tests
 
       Assert.AreEqual("No-One", winner);
     }
+    [TestMethod]
+    public void DecideWinner_CalculateWinnerByComparingTheirWeapons_Winner()
+    {
+      Player player1 = new Player("Ven");
+      Player player2 = new Player("Keturah");
+      player1.AssaignWeapon("r");
+      player2.AssaignWeapon("p");
+      Battle newBattle = new Battle(player1, player2);
+
+      string winner = newBattle.Versus();
+
+      Assert.AreEqual("Keturah", winner);
+    }
   }
 }
