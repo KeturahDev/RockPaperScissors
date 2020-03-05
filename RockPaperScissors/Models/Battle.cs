@@ -3,7 +3,7 @@ namespace RockPaperScissors.Models
   public class Battle
   {
     // string[] victoryStatus = {"Winner", "Draw"};
-    Player representingDraw = new Player("fail test");
+    Player representingDraw = new Player("No-One");
     public Player Player1 {get;set;}
     public Player Player2 {get;set;}
     public Player Winner {get;set;}
