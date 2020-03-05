@@ -25,8 +25,8 @@ Paper beats Rock
 | Players choose **weapon** out of available weapons | *rock paper or scissors* jeff.AssaignWeapon("scissors") | *jeff has Scissors as weapon property* |
 | **Battle** is created with player props | create battle(player1, player2) | *battle of player1 and player2 exists* |
 | Battle compares weapon props of players | create battle(player1, player2 | *battle output:* paper vs scissors |
-| Victory/Draw/Lose **statuses** are created | createVictory, createDraw, createLose | *victory, draw, lose exist* |
-| Battle returns Victory/Loose/Draw statuses based on weapon combinations | create battle(paper, scissors) | *paper **Lose**, scissors **Victory*** |
+| Winner property of Battle exists with autoValue of noOne | no verses... Player who = Battle.Winner | *noOne* |
+| Battle returns Winner based on weapon combinations - establish rock over scissors, so on | createBattle(p1, p2).. Battle.Versus().. | *Battle Winner = player2 with scissors* |
 | Battle holds two players | create battle(jeff, john) | *battle of jeff and john exists* |
 | Battle results in two seperate statuses depending on assaigned weapons | battle holds: john-paper and jeff-scrissors | *john **Lose**, jeff **Victory*** |
 
