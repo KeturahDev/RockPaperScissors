@@ -32,5 +32,16 @@ namespace RockPaperScissors.Tests
 
       Assert.AreEqual("Rock vs Paper", comparison);
     }
+    [TestMethod]
+    public void DisplayWinner_DisplayPresetWinnerToBeNoOne_NoOne()
+    {
+      Player player1 = new Player("Ven");
+      Player player2 = new Player("Keturah");
+      Battle newBattle = new Battle(player1, player2);
+
+      string winner = newBattle.Winner.Name;
+
+      Assert.AreEqual("No-One", winner);
+    }
   }
 }
