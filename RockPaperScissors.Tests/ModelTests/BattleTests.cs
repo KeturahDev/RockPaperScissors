@@ -20,7 +20,7 @@ namespace RockPaperScissors.Tests
       Assert.AreEqual(typeof(Battle), result.GetType());
     }
     [TestMethod]
-    public void CompareWeapons_ComparePlayersWeapons_WeaponStrings()
+    public void BattleDetails_ComparePlayersWeapons_WeaponStrings()
     {
       Player player1 = new Player("Ven");
       Player player2 = new Player("Keturah");
@@ -28,7 +28,7 @@ namespace RockPaperScissors.Tests
       player2.AssaignWeapon("p");
       Battle newBattle = new Battle(player1, player2);
 
-      string comparison = newBattle.Versus();
+      string comparison = newBattle.BattleDetails();
 
       Assert.AreEqual("Rock vs Paper", comparison);
     }
